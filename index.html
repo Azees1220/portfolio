@@ -1,17 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio - Azees</title>
-    <meta name="description" content="Professional animated portfolio showcasing projects and skills">
-    <meta name="theme-color" content="#1F2937">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azees — Developer Portfolio</title>
+  <meta name="description" content="Azees' professional portfolio. Frontend developer. Projects, contact, and animated UI." />
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Azees</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hello, I'm <span class="accent">Azees</span></h1>
+          <p class="role">I build beautiful, animated web experiences — <span id="typed"></span></p>
+          <p class="lead">Frontend developer focusing on modern UI, performance and delightful interactions.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View projects</a>
+            <a class="btn ghost" href="https://github.com/Azees1220">View GitHub</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="device">
+            <div class="screen">
+              <ul class="floating-list">
+                <li>Interactive UI</li>
+                <li>Animated transitions</li>
+                <li>Responsive design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 40 C 240 120 400 0 720 40 C 1040 80 1200 40 1440 80 L1440 120 L0 120 Z"></path></svg>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="section-lead">Live demos and repositories — highlights from my GitHub.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Complaint Tracking System</h3>
+            <p>Full frontend for tracking complaints with responsive UI. Deployed on Vercel.</p>
+            <div class="card-links">
+              <a href="https://github.com/Azees1220/complaint-tracking-system" target="_blank" rel="noopener">Repo</a>
+              <a href="https://complaint-tracking-system-six.vercel.app" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Password Strength Checker</h3>
+            <p>Lightweight HTML project that evaluates password strength and gives suggestions.</p>
+            <div class="card-links">
+              <a href="https://github.com/Azees1220/passwordstrength-checker.html" target="_blank" rel="noopener">Repo</a>
+              <a href="https://passwordstrength-checker-html.vercel.app" target="_blank" rel="noopener">Live</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Private Messenger (E2E)</h3>
+            <p>End-to-end encrypted messenger prototype with a focus on privacy and real-time messaging.</p>
+            <div class="card-links">
+              <a href="https://github.com/Azees1220/Private_messanger-" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+
+          <article class="card special">
+            <h3>GitHub Profile Config</h3>
+            <p>Profile config & GitHub README automations used to showcase projects and stats.</p>
+            <div class="card-links">
+              <a href="https://github.com/Azees1220/Azees1220" target="_blank" rel="noopener">Repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About me</h2>
+        <p>I enjoy building animated and accessible web interfaces. I focus on performance, maintainable CSS, and smooth interactions that delight users.</p>
+        <ul class="skills">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Responsive & accessible UI</li>
+          <li>Animations & UX micro-interactions</li>
+          <li>Deployments (Vercel, GitHub Pages)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I'm available for freelance work or full-time roles. Email me or open an issue on my GitHub.</p>
+        <p><a href="mailto:contact@azeess.dev">contact@azeess.dev</a> • <a href="https://github.com/Azees1220">github.com/Azees1220</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Azees — Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
 </body>
 </html>
